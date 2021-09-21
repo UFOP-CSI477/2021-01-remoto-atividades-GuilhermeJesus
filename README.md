@@ -2,11 +2,11 @@
 
 ## Atualize os seus dados:
 
-- Nome:
-- Matrícula:
-- Curso:
-- Semestre/Ano correntes:
-- Link para o seu GitHub:
+- Nome: Guilherme Augusto Rodrigues de Jesus
+- Matrícula: 1928026
+- Curso: SI
+- Semestre/Ano correntes: 5°
+- Link para o seu GitHub: https://github.com/GuilhermeJesus?tab=repositories
 
 ## [Projeto final:](./Projeto/README.md) 
 
