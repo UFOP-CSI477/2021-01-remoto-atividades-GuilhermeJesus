@@ -10,4 +10,7 @@
 
 ## [Projeto final:](./Projeto/README.md) 
 
-Apresente uma breve descrição do seu projeto.
+Um site que armazena atividades de um usuário, com as opções de criar(nome,data,hora,descrição), excluir, editar e uma forma de mostrar essas atividades em ordem.
+
+Obs: Não tenho conhecimento prévio dessa matéria, então não sei dizer se é muito fácil/difícil.
+
