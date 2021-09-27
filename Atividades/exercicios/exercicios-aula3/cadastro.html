@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoas</title>
+</head>
+<body>
+    <h1>Dados do Cadastro</h1>
+
+    <form method="get" action="validar.html">
+
+        <div>
+        <label for="nome">Nome : </label>
+        <input type="text" name="nome" id="nome" placeholder= "Nome da Pessoa">
+        </div>
+        <div>
+        <label for="endereco">Endereço : </label>
+        <input type="text" name="endereco" id="endereco" placeholder= "Endereço">
+        </div>
+        <div>
+        <label for="documento">Documento : </label>
+        <input type="text" name="documento" id="documento" placeholder= "Documento">
+        </div>
+        <div>
+        <label for="nome">Telefone : </label>
+        <input type="text" name="tel" id="tel" placeholder= "Telefone">
+        </div>
+
+        <div>
+            <label> Gênero : </label>
+
+            <div>
+                <input type="radio" name="genero" id="feminino" value="F">
+                <label for="feminino">Feminino</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="masculino" value="M">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="naobinario" value="F">
+                <label for="naobinario">Não Binário</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="naoinformar" value="F">
+                <label for="naoinformar">Prefiro não Informar</label>
+            </div>
+        </div>
+
+        <div>
+            <label>Áreas de Interesse</label>
+        </div>
+
+        <input type="submit" value="Cadastrar">
+
+
+    </form>
+    
+</body>
+</html>
