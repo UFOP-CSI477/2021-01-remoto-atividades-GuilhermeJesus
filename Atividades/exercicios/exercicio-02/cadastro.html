@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoas</title>
+</head>
+<body>
+
+    <div>
+      <p>Nome: Guilherme A R de Jesus</p>
+      <p>Usuaruio: ABC</p>
+      <p>Email: guilherme@teste.com</p>
+      <p>Data de Criação: 24/09/21</p>
+      <p>Ultimo acesso: 28/09/21</p>
+      <p>Foto de Perfil:</p>
+      <img width="20%" src="./img/blue.jpg" alt="">
+      <br>
+      <div>
+      
+
+
+      <a href="index.html" target="_blank">Home</a>
+      <a href="estados.html" target="_blank">Estados</a>
+      <a href="cidades.html" target="_blank">Cidades</a>
+      <a href="produtos.html" target="_blank">Produtos</a>
+      <a href="pessoas.html" target="_blank">Pessoas</a>
+      <a href="compras.html" target="_blank">Compras</a>
+      <a href="perfil.html" target="_blank">Perfil</a>
+      <a href="sair.html" target="_blank">Sair</a>
+    </div>
+
+    <h1>Dados do Cadastro</h1>
+
+    <form method="get" action="validar.html">
+
+        <div>
+        <label for="nome">Nome : </label>
+        <input type="text" name="nome" id="nome" placeholder= "Nome da Pessoa">
+        </div>
+        <div>
+        <label for="usuario">Usuario : </label>
+        <input type="text" name="usuario" id="usuario" placeholder= "Usuario">
+        </div>
+        <div>
+        <label for="email">Documento : </label>
+        <input type="text" name="email" id="email" placeholder= "Email">
+        </div>
+
+        <div>
+            <label> Gênero : </label>
+
+            <div>
+                <input type="radio" name="genero" id="feminino" value="F">
+                <label for="feminino">Feminino</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="masculino" value="M">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="naobinario" value="F">
+                <label for="naobinario">Não Binário</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="naoinformar" value="F">
+                <label for="naoinformar">Prefiro não Informar</label>
+            </div>
+        </div>
+
+        <div>
+            <label>Áreas de Interesse</label>
+
+            <div>
+                <input type="checkbox" name="area[0]" id="web">
+                <label for="web">Sistemas Web</label>
+            </div>
+            <div>
+                <input type="checkbox" name="area[1]" id="db">
+                <label for="db">Banco de Dados</label>
+            </div>
+            <div>
+                <input type="checkbox" name="area[2]" id="redes">
+                <label for="db">Redes</label>
+            </div>
+        </div>
+
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar">
+       
+
+    </form>
+    
+</body>
+</html>
