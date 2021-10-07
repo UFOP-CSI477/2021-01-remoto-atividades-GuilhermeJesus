@@ -1,0 +1,15 @@
+html{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+}
+
+.perfil{
+    color: goldenrod;
+    font-size: 14px;
+}
+
+a{
+    background-color: indigo;
+    color: goldenrod;
+    text-decoration: none;
+}
