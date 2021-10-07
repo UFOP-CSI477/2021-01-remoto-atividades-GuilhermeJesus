@@ -3,6 +3,11 @@ body {
     color:white;
 }
 
+img{
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
 html{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 22px;
@@ -15,8 +20,18 @@ html{
 
 .column{
     flex: 50%;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 .column a{
+    color: white;
+}
+
+.menu a{
+    color: white;
+}
+
+.opcoes a{
     color: white;
 }
