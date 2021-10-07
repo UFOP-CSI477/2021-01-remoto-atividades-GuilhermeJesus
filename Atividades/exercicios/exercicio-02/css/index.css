@@ -1,15 +1,22 @@
+body {
+    background-color: rgba(71, 70, 70, 0.801);
+    color:white;
+}
+
 html{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 22px;
 }
 
-.perfil{
-    color: goldenrod;
-    font-size: 14px;
+.row{
+    display: flex;
+    flex: 50%;
 }
 
-a{
-    background-color: indigo;
-    color: goldenrod;
-    text-decoration: none;
+.column{
+    flex: 50%;
+}
+
+.column a{
+    color: white;
 }
