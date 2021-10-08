@@ -15,9 +15,13 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 
-.infouser{
+.info{
     font-size: 15px;
     margin-left: 50px;
+}
+
+.menu{
+    font-size: 25px;
 }
 
 .container div img{
