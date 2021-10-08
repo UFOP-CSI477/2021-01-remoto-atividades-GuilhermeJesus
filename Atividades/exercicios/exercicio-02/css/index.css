@@ -1,37 +1,30 @@
-body {
+body{
+    margin: 10px;
     background-color: rgba(71, 70, 70, 0.801);
     color:white;
 }
 
-img{
+.container{
+    width: 100vw;
+    height: 100vw;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.infouser{
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+.container div img{
     vertical-align: middle;
     margin-bottom: 5px;
 }
 
-html{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 22px;
-}
-
-.row{
-    display: flex;
-    flex: 50%;
-}
-
-.column{
-    flex: 50%;
-    margin-left: 50px;
-    margin-top: 50px;
-}
-
-.column a{
-    color: white;
-}
-
-.menu a{
-    color: white;
-}
-
-.opcoes a{
+.container a{
     color: white;
 }
