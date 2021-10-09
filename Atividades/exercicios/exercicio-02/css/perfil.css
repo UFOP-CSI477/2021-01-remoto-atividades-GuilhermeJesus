@@ -5,29 +5,26 @@ body{
 }
 
 .container{
-    margin-top: 20px;
     width: 100vw;
     height: 100vw;
 
     font-family: 'Courier New', monospace;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
 }
 
-.info{
+.perfil{
+    margin-top: 70px;
     font-size: 12px;
-    margin-left: 50px;
+    margin-left: 70px;
+
 }
 
 .menu{
-    font-size: 25px;
+    font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.container div img{
-    vertical-align: middle;
-    margin-bottom: 5px;
 }
 
 .container a{
