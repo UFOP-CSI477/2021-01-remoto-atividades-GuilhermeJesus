@@ -1,6 +1,6 @@
 body{
     margin: 10px;
-    background-image: linear-gradient(to right, gray, white);
+    background-image: linear-gradient(to right, rgb(59, 59, 59), rgb(161, 161, 161));
     color:white;
 }
 
@@ -11,7 +11,7 @@ body{
     font-family: 'Courier New', monospace;
 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px 1fr;
 }
 
