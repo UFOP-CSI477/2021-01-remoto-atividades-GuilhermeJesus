@@ -20,11 +20,11 @@
 
   Este projeto terá as seguintes funcionalidades:
 
-  1- Criar atividades.
-  2- Editar atividades.
-  3- Excluir atividades.
-  4- Apresentação das atividades para o usuário.
-  5- Classificação das atividades(data, prioridade).
+  1- Criar atividades.  
+  2- Editar atividades.  
+  3- Excluir atividades.  
+  4- Apresentação das atividades para o usuário.  
+  5- Classificação das atividades(data, prioridade).  
 
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
