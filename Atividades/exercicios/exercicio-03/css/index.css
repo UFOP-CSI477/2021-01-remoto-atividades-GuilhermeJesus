@@ -2,27 +2,7 @@ body{
     margin: 10px;
     background-image: linear-gradient(to right, rgb(59, 59, 59), rgb(161, 161, 161));
     color:white;
-}
-
-.container{
-    margin-top: 20px;
-    width: 100vw;
-    height: 100vw;
-
     font-family: 'Courier New', monospace;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.info{
-    font-size: 12px;
-    margin-left: 50px;
-}
-
-.menu{
-    font-size: 25px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .container div img{
