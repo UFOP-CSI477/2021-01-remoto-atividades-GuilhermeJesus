@@ -39,61 +39,61 @@
     
                 <div class="col-md-6">
     
-                    <form class="opcoes" method="get" action="validar.html">
+                    <form method="get" action="validar.html">
     
-                        <div>
+                        <div class="form-group">
                             <label for="nome">Nome : </label>
-                            <input type="text" name="nome" id="nome" placeholder= "Nome da Pessoa">
+                            <input type="text" name="nome" id="nome" placeholder= "Nome da Pessoa" class="form-control">
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label for="usuario">Usuario : </label>
-                            <input type="text" name="usuario" id="usuario" placeholder= "Usuario">
+                            <input type="text" name="usuario" id="usuario" placeholder= "Usuario" class="form-control">
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label for="email">Documento : </label>
-                            <input type="text" name="email" id="email" placeholder= "Email">
+                            <input type="text" name="email" id="email" placeholder= "Email" class="form-control">
                         </div>
                 
                         <div>
                             <label> Gênero : </label>
                 
-                            <div>
-                                <input type="radio" name="genero" id="feminino" value="F">
-                                <label for="feminino">Feminino</label>
+                            <div class="form-group form-check">
+                                <input type="radio" name="genero" id="feminino" value="F" class="form-check-input">
+                                <label for="feminino" class="form-check-label">Feminino</label >
                             </div>
-                            <div>
-                                <input type="radio" name="genero" id="masculino" value="M">
-                                <label for="masculino">Masculino</label>
+                            <div class="form-group form-check">
+                                <input type="radio" name="genero" id="masculino" value="M" class="form-check-input">
+                                <label for="masculino" class="form-check-label">Masculino</label>
                             </div>
-                            <div>
-                                <input type="radio" name="genero" id="naobinario" value="F">
-                                <label for="naobinario">Não Binário</label>
+                            <div class="form-group form-check">
+                                <input type="radio" name="genero" id="naobinario" value="F" class="form-check-input">
+                                <label for="naobinario" class="form-check-label">Não Binário</label>
                             </div>
-                            <div>
-                                <input type="radio" name="genero" id="naoinformar" value="F">
-                                <label for="naoinformar">Prefiro não Informar</label>
+                            <div class="form-group form-check">
+                                <input type="radio" name="genero" id="naoinformar" value="F" class="form-check-input">
+                                <label for="naoinformar" class="form-check-label">Prefiro não Informar</label>
                             </div>
                         </div>
                 
                         <div>
-                            <label>Áreas de Interesse</label>
+                            <label>Áreas de Interesse :</label>
                 
-                            <div>
-                                <input type="checkbox" name="area[0]" id="web">
-                                <label for="web">Sistemas Web</label>
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="area[0]" id="web" class="form-check-input">
+                                <label for="web" class="form-check-label">Sistemas Web</label>
                             </div>
-                            <div>
-                                <input type="checkbox" name="area[1]" id="db">
-                                <label for="db">Banco de Dados</label>
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="area[1]" id="db" class="form-check-input">
+                                <label for="db" class="form-check-label">Banco de Dados</label>
                             </div>
-                            <div>
-                                <input type="checkbox" name="area[2]" id="redes">
-                                <label for="db">Redes</label>
+                            <div class="form-group form-check">
+                                <input type="checkbox" name="area[2]" id="redes" class="form-check-input">
+                                <label for="db" class="form-check-label">Redes</label>
                             </div>
                         </div>
                 
-                        <input type="submit" value="Cadastrar">
-                        <input type="reset" value="Limpar">
+                        <input type="submit" value="Cadastrar" class="btn-primary">
+                        <input type="reset" value="Limpar" class="btn-secondary">
                     </form>
                 </div>
             </div>
