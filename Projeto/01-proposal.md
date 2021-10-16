@@ -34,7 +34,13 @@
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
-  Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
+  Por hora pensei no desenvolvimento de 3 páginas:
+
+  1- Página inicial : https://www.figma.com/file/cjdMbhz29mnhpSaH2aYG8B/Untitled?node-id=0%3A1  
+  2- Página criar nova atividade : Ainda não foi desenvolvida, mas seria bem simples apenas as áreas dos cadastros necessarios e voltar a pagina inicial.  
+  3- Página de atividades concluídas: Ainda não foi desenvolvida, mas seria apenas uma lista das atividades já concluídas e voltar a página inicial.  
+
+  Obs: O simbolo de estrela no modelo seria opções de editar/concluir/excluir.  
 
 ### 5. Referências
 
