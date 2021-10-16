@@ -1,5 +1,5 @@
 # **CSI606-2021-01 - Remoto - Proposta de Trabalho Final**
-## *Aluna(o): Princesa Leia (Luke Skywalker)*
+## *Aluna(o): Guilherme A R de Jesus - 1928026*
 
 --------------
 
@@ -7,12 +7,13 @@
 
 ### Resumo
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+  A proposta é um site do estilo To-do list para gerenciamento de atividades de um usuário. Nesse site sera 
+  possivel criar, deletar, editar atividades e suas informações como titulo, datam, horario, grau de importancia e detalhes.
 
 <!-- Apresentar o tema. -->
 ### 1. Tema
 
-  O trabalho final tem como tema o desenvolvimento de ...
+  O trabalho final tem como tema o desenvolvimento de um site To-do list
 
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
