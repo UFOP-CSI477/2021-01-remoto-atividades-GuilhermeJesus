@@ -40,7 +40,7 @@
   2- Página criar nova atividade : Ainda não foi desenvolvida, mas seria bem simples apenas as áreas dos cadastros necessarios e voltar a pagina inicial.  
   3- Página de atividades concluídas: Ainda não foi desenvolvida, mas seria apenas uma lista das atividades já concluídas e voltar a página inicial.  
 
-  Obs: O simbolo de estrela no modelo seria opções de editar/concluir/excluir.  
+  Obs: O simbolo de estrela no modelo da página inicial seria as opções de editar/concluir/excluir as atividades.  
 
 ### 5. Referências
 
