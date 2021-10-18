@@ -5,7 +5,7 @@
 - Nome: Guilherme Augusto Rodrigues de Jesus
 - Matrícula: 1928026
 - Curso: SI
-- Semestre/Ano correntes: 5°
+- Semestre/Ano correntes: 2019/2
 - Link para o seu GitHub: https://github.com/GuilhermeJesus?tab=repositories
 
 ## [Projeto final:](./Projeto/README.md) 
