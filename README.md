@@ -2,7 +2,7 @@
 
 ## Atualize os seus dados:
 
-- Nome: Guilherme Augusto Rodrigues de Jesus
+- Nome: Guilherme A R de Jesus
 - Matrícula: 1928026
 - Curso: SI
 - Semestre/Ano correntes: 5°
