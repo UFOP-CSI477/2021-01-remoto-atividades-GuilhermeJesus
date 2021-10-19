@@ -10,4 +10,4 @@
 
 ## [Projeto final:](./Projeto/README.md) 
 
-O trabalho final tem como tema o desenvolvimento de um site To-do list para gerenciamento de atividades.
+O trabalho final tem como tema o desenvolvimento de um site To-do list para gerenciamento de atividades.  
