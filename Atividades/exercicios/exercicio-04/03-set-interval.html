@@ -8,13 +8,13 @@
 
     <script>
 
-        let contador = 1;
+        let data = Date();
         let id;
         let executando = false;
 
         function processo(){
-            document.getElementById("contador").innerHTML=`contador = ${contador}`;
-            contador++;
+            document.getElementById("data").innerHTML=`${data}`;
+            data = Date();
         }
 
         function iniciar(){
@@ -28,19 +28,13 @@
             executando = false;
         }
 
-        function reiniciar(){
-            parar();
-            contador=1;
-            document.getElementById("contador").innerHTML="";
-        }
-
     </script>
 </head>
 <body>
-    <div id="contador"></div>
+    <div id="data"></div>
     
     <input type="button" value="Iniciar" onclick="iniciar()">
     <input type="button" value="Parar" onclick="parar()">
-    <input type="button" value="Reiniciar" onclick="reiniciar()">
+    
 </body>
 </html>
