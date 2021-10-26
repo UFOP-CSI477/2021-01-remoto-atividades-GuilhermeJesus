@@ -1,0 +1,6 @@
+body{
+    background-image: linear-gradient(to right, rgb(59, 59, 59), rgb(161, 161, 161));
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+}
