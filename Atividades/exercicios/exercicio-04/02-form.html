@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade02 JS</title>
+
+    <script>
+        'use strict'
+        function Pessoa(nome,snome,idade,end){
+            this.nome = nome;
+            this.snome=snome;
+            this.idade=idade;
+            this.end=end;
+        }
+
+        function carregarDados(){
+
+            const nome= window.prompt('Digite o seu nome');
+            const snome= window.prompt('Digite o seu sobrenome');
+            const idade= window.prompt('Digite a sua idade');
+            const end= window.prompt('Digite o seu endereço');
+
+            const p1 = new Pessoa(nome,snome,idade,end)
+            document.getElementById("nome").innerHTML = p1.nome;
+            document.getElementById("snome").innerHTML = p1.snome;
+            document.getElementById("idade").innerHTML = p1.idade;
+            document.getElementById("end").innerHTML = p1.end;
+        }
+
+        function carregarDadosdoForm(){
+
+            const nome = document.frmDados.nome.value;
+            const snome = document.frmDados.snome.value;
+            const idade = document.frmDados.idade.value;
+            const end = document.frmDados.end.value;
+
+            window.alert(`Dados carregados com sucesso: ${nome} ${snome}`)
+
+            const p1 = new Pessoa(nome,snome,idade,end)
+            document.getElementById("nome").innerHTML = p1.nome;
+            document.getElementById("snome").innerHTML = p1.snome;
+            document.getElementById("idade").innerHTML = p1.idade;
+            document.getElementById("end").innerHTML = p1.end;
+        }
+
+    </script>
+</head>
+
+<body>
+    <form action="post" name="frmDados">
+        <input type="text" name="nome">
+        <input type="text" name="snome">
+        <input type="text" name="idade">
+        <input type="text" name="end">
+    </form>
+    
+    <div id="dados">
+        <div id="nome"></div>
+        <div id="snome"></div>
+        <div id="idade"></div>
+        <div id="end"></div>
+    </div>
+
+    <input type="button" value="Carregar" onclick="carregarDados()">
+    <input type="button" value="Carregar do Formulario" onclick="carregarDadosdoForm()">
+
+</body>
+</html>
