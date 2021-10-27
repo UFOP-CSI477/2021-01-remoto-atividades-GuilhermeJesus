@@ -14,4 +14,19 @@ function recebeDados() {
     window.alert("Informe email valido !");
     return;
   }
+
+  if (!nome.match(/^[A-Za-z]+$/)) {
+    window.alert("Informe um nome valido !");
+    return;
+  }
+
+  if (!cep.match(/^[0-9]+$/)) {
+    window.alert("Informe um valor valido para o CEP !");
+    return;
+  }
+
+  if (!tel.match(/^[0-9]+$/)) {
+    window.alert("Informe um valor valido para o telefone !");
+    return;
+  }
 }
