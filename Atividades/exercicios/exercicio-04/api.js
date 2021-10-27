@@ -5,30 +5,69 @@ function limparSelect(campo){
     }
 }
 
-function preencherSelectEstados(data){
+function preencherSelectRegioes(data){
 
-    let estados = document.getElementById("estados");
-    limparSelect(estados);
+    let regioes = document.getElementById("regioes");
+    limparSelect(regioes);
 
     for(let index in data){
 
-        const{id,nome,sigla} = data[index];
+        const{id,nome} = data[index];
 
         let option = document.createElement("option");
         option.value = id;
-        option.innerHTML = `${nome}-${sigla}`;
+        option.innerHTML = nome;
 
-        estados.appendChild(option);
+        regioes.appendChild(option);
 
     }
 }
 
+function carregarRegioes(){
+
+    fetch("https://servicodados.ibge.gov.br/api/v1/localidades/regioes")
+        .then(response => response.json())
+        .then(data => preencherSelectRegioes(data))
+        .catch(error => console.error(error))
+}
+
 function carregarEstados(){
 
-    fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
+    const regioes = document.getElementById("regioes");
+    const regioes_index = regioes.selectedIndex;
+    const regioes_id = regioes.options[regioes_index].value;
+
+    const estados = document.getElementById("estados");
+    limparSelect(estados);
+
+    if(regioes_id==""){
+        return;
+    }
+
+    const url_estados = `https://servicodados.ibge.gov.br/api/v1/localidades/regioes/${regioes_id}/estados`
+
+    fetch(url_estados)
         .then(response => response.json())
         .then(data => preencherSelectEstados(data))
         .catch(error => console.error(error))
+}
+
+function preencherSelectEstados(data){
+
+    let estados = document.getElementById("estados");
+    limparSelect(regioes);
+
+    for(let index in data){
+
+        const{id,nome} = data[index];
+
+        let option = document.createElement("option");
+        option.value = id;
+        option.innerHTML = nome;
+
+        estados.appendChild(option);
+
+    }
 }
 
 function carregarCidades(){
@@ -69,3 +108,4 @@ function preencherSelectCidades(data){
 
     }
 }
+

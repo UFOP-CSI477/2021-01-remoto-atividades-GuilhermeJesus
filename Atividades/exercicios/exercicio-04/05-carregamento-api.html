@@ -32,14 +32,18 @@
 <body>
 
     <form>
-        <input type="button" value="Carregar" onclick="carregarEstados()">
+        <input type="button" value="Carregar" onclick="carregarRegioes()">
+        <select name="regioes" id="regioes" onchange="carregarEstados()"">
+            <option value="">Selecione:</option>
+        </select>
+
         <select name="estados" id="estados" onchange="carregarCidades()">
             <option value="">Selecione:</option>
         </select>
 
         <select name="cidades" id="cidades">
-            <option value="">Selecione:</option>
-        </select>
+          <option value="">Selecione:</option>
+      </select>
     </form>
 
     <script src="api.js"></script>
