@@ -7,8 +7,6 @@ let cont = 0;
 
 function getInfo(value){
 
-    
-
     if(isNaN(value) && value!='.'){
         operador=value;
         document.getElementById('display-superior').innerHTML = `${number1} ${operador}`;
@@ -31,11 +29,7 @@ function getInfo(value){
 }
 
 function calcula(){
-    /*
-    window.alert(number1);
-    window.alert(operador)
-    window.alert(number2);
-    */
+    
     let aux;
 
     if(operador == '+'){
