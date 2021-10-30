@@ -7,6 +7,8 @@ let cont = 0;
 
 function getInfo(value){
 
+    
+
     if(isNaN(value) && value!='.'){
         operador=value;
         cont=cont +1;
@@ -14,13 +16,14 @@ function getInfo(value){
         return;
     }
     if(cont == 0){
-        //Falta mostrar no display
         numberString = `${numberString}${value}`;
         number1=numberString;
+        document.getElementById('display').innerHTML = number1;
     }
     if(cont == 1 ){
         numberString2 = `${numberString2}${value}`;
         number2=numberString2;
+        document.getElementById('display').innerHTML = number2;
     }
 }
 
@@ -39,14 +42,17 @@ function calcula(){
     }
     if(operador == '-'){
         aux = parseInt(number1) - parseInt(number2);
+        document.getElementById('display').innerHTML = aux;
         window.alert(aux);
     }
     if(operador == '*'){
         aux = parseInt(number1) * parseInt(number2);
+        document.getElementById('display').innerHTML = aux;
         window.alert(aux);
     }
     if(operador == '/'){
         aux = parseInt(number1) / parseInt(number2);
+        document.getElementById('display').innerHTML = aux;
         window.alert(aux);
     }
 }
@@ -61,11 +67,3 @@ function clear(){
     cont = 0;
 }
 
-function test(){
-    let a = 5;
-    let b = 6;
-    let c = 2;
-    let test = a+ '.'+b; 
-    test = parseFloat(test)*c;
-    window.alert(test);
-}
