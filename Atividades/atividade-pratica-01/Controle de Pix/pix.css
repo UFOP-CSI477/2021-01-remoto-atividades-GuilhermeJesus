@@ -1,0 +1,14 @@
+.container{
+    margin-top: 20px;
+    width: 100vw;
+    height: 100vw;
+
+    font-family: 'Courier New', monospace;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.botao{
+    margin-top: 20px;
+}
