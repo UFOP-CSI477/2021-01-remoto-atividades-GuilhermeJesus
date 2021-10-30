@@ -37,15 +37,15 @@ function calcula(){
         document.getElementById('display').innerHTML = aux;
     }
     if(operador == '-'){
-        aux = parseInt(number1) - parseInt(number2);
+        aux = parseFloat(number1) - parseFloat(number2);
         document.getElementById('display').innerHTML = aux;
     }
     if(operador == '*'){
-        aux = parseInt(number1) * parseInt(number2);
+        aux = parseFloat(number1) * parseFloat(number2);
         document.getElementById('display').innerHTML = aux;
     }
     if(operador == '/'){
-        aux = parseInt(number1) / parseInt(number2);
+        aux = parseFloat(number1) / parseFloat(number2);
         document.getElementById('display').innerHTML = aux;
     }
 }
