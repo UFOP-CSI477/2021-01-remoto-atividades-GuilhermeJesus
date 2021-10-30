@@ -52,7 +52,7 @@ function calcula(){
         return aux;
     }
     if(operador == '*'){
-        aux = parseFloat(number1) * parseFloat(number2);
+        aux = parseFloat(parseFloat(number1) * parseFloat(number2)).toPrecision(5);
         document.getElementById('display').innerHTML = aux;
         limpar();
         document.getElementById('display').innerHTML = aux;
@@ -61,7 +61,7 @@ function calcula(){
         return aux;
     }
     if(operador == '/'){
-        aux = parseFloat(number1) / parseFloat(number2);
+        aux = parseFloat(parseFloat(number1) / parseFloat(number2)).toPrecision(5);
         document.getElementById('display').innerHTML = aux;
         limpar();
         document.getElementById('display').innerHTML = aux;
