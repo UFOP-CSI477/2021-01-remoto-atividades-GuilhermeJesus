@@ -16,23 +16,6 @@ function getInfo(value){
         value=0;
         return;
     }
-    /*
-    if(cont == 1 && isNaN(value) && value!='.'){
-        resultado = calcula();
-        document.getElementById('display-superior').innerHTML = `${resultado} ${operador} ${number2} ${value}`;
-        document.getElementById('display').innerHTML = resultado;
-
-        operador= value;
-
-        number1=parseFloat(resultado);
-        number2=0;
-        operador = '';
-        numberString='';
-        numberString2='';
-        cont = 1;
-    }
-    */
-    
 
     if(cont == 0){
         numberString = `${numberString}${value}`;
@@ -64,14 +47,29 @@ function calcula(){
     if(operador == '-'){
         aux = parseFloat(number1) - parseFloat(number2);
         document.getElementById('display').innerHTML = aux;
+        limpar();
+        document.getElementById('display').innerHTML = aux;
+        document.getElementById('display-superior').innerHTML = aux;
+        number1 = aux;
+        return aux;
     }
     if(operador == '*'){
         aux = parseFloat(number1) * parseFloat(number2);
         document.getElementById('display').innerHTML = aux;
+        limpar();
+        document.getElementById('display').innerHTML = aux;
+        document.getElementById('display-superior').innerHTML = aux;
+        number1 = aux;
+        return aux;
     }
     if(operador == '/'){
         aux = parseFloat(number1) / parseFloat(number2);
         document.getElementById('display').innerHTML = aux;
+        limpar();
+        document.getElementById('display').innerHTML = aux;
+        document.getElementById('display-superior').innerHTML = aux;
+        number1 = aux;
+        return aux;
     }
 }
 
