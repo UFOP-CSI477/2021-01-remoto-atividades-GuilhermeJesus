@@ -11,7 +11,7 @@ function getInfo(value){
 
     if(isNaN(value) && value!='.'){
         operador=value;
-        document.getElementById('display-superior').innerHTML = document.getElementById('display-superior').textContent + " " +operador;
+        document.getElementById('display-superior').innerHTML = `${number1} ${operador}`;
         cont=cont +1;
         value=0;
         return;
@@ -20,13 +20,13 @@ function getInfo(value){
         numberString = `${numberString}${value}`;
         number1=numberString;
         document.getElementById('display').innerHTML = number1;
-        document.getElementById('display-superior').innerHTML = document.getElementById('display-superior').textContent + " " +number1;
+        document.getElementById('display-superior').innerHTML = `${number1}`;
     }
     if(cont == 1 ){
         numberString2 = `${numberString2}${value}`;
         number2=numberString2;
         document.getElementById('display').innerHTML = number2;
-        document.getElementById('display-superior').innerHTML = document.getElementById('display-superior').textContent + " " +number2;
+        document.getElementById('display-superior').innerHTML = `${number1} ${operador} ${number2} `;
     }
 }
 
