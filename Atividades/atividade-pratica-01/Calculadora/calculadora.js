@@ -4,8 +4,6 @@ let operador = '';
 let numberString='';
 let numberString2='';
 let cont = 0;
-let resultado=0;
-let tudo=0;
 
 function getInfo(value){
 
@@ -82,6 +80,5 @@ function limpar(){
     numberString='';
     numberString2='';
     cont = 0;
-    resultado =0;
 }
 
