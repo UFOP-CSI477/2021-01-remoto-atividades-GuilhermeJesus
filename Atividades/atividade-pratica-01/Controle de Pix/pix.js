@@ -57,14 +57,28 @@ function preencherSelectBancos2(data){
     }
 }
 
-function atualizaSaldo(valor){
+function atualizaSaldo(){
     document.getElementById("txtSaldo").innerHTML = saldo;
 }
 
 function guardaTransacao(){
 
-    //saldo = saldo + valor;
+    saldo = saldo + parseFloat(document.getElementById('valor').value);
+    atualizaSaldo();
 
     //salvar transacao
+
+    let ind = document.getElementById('indicador').value;
+    let valor = document.getElementById('valor').value;
+    let nome = document.getElementById('nome').value;
+    let b1 = document.getElementById('bancos').value;
+    let b2 = document.getElementById('bancos2').value;
+
+    window.alert(ind);
+    window.alert(valor);
+    window.alert(nome);
+    window.alert(b1);
+    window.alert(b2);
+    
 
 }
