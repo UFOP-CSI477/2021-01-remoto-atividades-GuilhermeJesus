@@ -1,4 +1,6 @@
-let saldo = 1000;
+let saldo =1000;
+cont = 0;
+list = [];
 
 function limparSelect(campo){
 
@@ -58,15 +60,13 @@ function preencherSelectBancos2(data){
 }
 
 function atualizaSaldo(){
-    document.getElementById("txtSaldo").innerHTML = saldo;
+    document.getElementById("txtSaldo").innerHTML = parseFloat(saldo.toPrecision(8));
 }
 
 function guardaTransacao(){
 
-    saldo = saldo + parseFloat(document.getElementById('valor').value);
-    atualizaSaldo();
-
-    //salvar transacao
+    saldo = parseFloat(saldo + parseFloat(document.getElementById('valor').value));
+    atualizaSaldo(saldo);
 
     let ind = document.getElementById('indicador').value;
     let valor = document.getElementById('valor').value;
@@ -74,11 +74,8 @@ function guardaTransacao(){
     let b1 = document.getElementById('bancos').value;
     let b2 = document.getElementById('bancos2').value;
 
-    window.alert(ind);
-    window.alert(valor);
-    window.alert(nome);
-    window.alert(b1);
-    window.alert(b2);
+    //testando
+    list.push(cont);
+    cont++;
     
-
 }
