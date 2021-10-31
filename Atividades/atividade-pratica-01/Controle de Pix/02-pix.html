@@ -30,7 +30,7 @@
     crossorigin="anonymous"
   ></script>
 
-  <body>
+  <body onload="atualizaSaldo()">
     <script src="pix.js"></script>
 
     <div class="container">
@@ -40,7 +40,7 @@
           <p>Guilherme A R de Jesus</p>
           <p>CPF: 123456789</p>
           <p>Email: atoa@guilherme.com</p>
-          <p>Saldo: </p>
+          <p>Saldo: <span id="txtSaldo"></span></p>
         </div>
       </div>
 

@@ -1,5 +1,4 @@
-let saldo = 0;
-//vetor de historico
+let saldo = 1000;
 
 function limparSelect(campo){
 
@@ -58,10 +57,14 @@ function preencherSelectBancos2(data){
     }
 }
 
-function executa(){
+function atualizaSaldo(valor){
+    document.getElementById("txtSaldo").innerHTML = saldo;
+}
 
-    //novo saldo
+function guardaTransacao(){
 
-    //salvar em um vetor para historico
+    //saldo = saldo + valor;
+
+    //salvar transacao
 
 }
