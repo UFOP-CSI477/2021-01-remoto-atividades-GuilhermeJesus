@@ -37,10 +37,10 @@
       <div class="perfil">
         <h1>PERFIL</h1>
         <p>Foto</p>
-        <p>Nome</p>
-        <p>Documento</p>
-        <p>email</p>
-        <p>valor</p>
+        <p>Guilherme A R de Jesus</p>
+        <p>CPF: 123456789</p>
+        <p>Email: atoa@guilhermea.com</p>
+        <p>Saldo: </p>
       </div>
 
       <div>
@@ -87,7 +87,44 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+
+            <div class="col">
+              <h3>Informações</h3>
+                <div>
+                    <label for="indicador"><i class="info"></i> Indicador</label>
+                    <input type="text" id="indicador" name="indicador" placeholder="Digite o indicador.">
+                </div>
+              
+                <div>
+                    <label for="valor"><i class="info"></i> Valor</label>
+                    <input type="float" id="valor" name="valor" placeholder="R$ 0,00">
+                </div>
+              
+                <div>
+                    <p> </p>
+                    <input type="button" value="Carregar" onclick="carregarBancos()" />
+                    <select name="bancos" id="bancos">
+                        <option value="">Banco de Destino:</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div>
+                    <label for="nome"><i class="info"></i> Nome</label>
+                <input type="text" id="nome" name="firstname" placeholder="Digite seu nome.">
+                </div>
+                
+                <div>
+                    <input type="button" value="Carregar" onclick="carregarBancos()" />
+                <select name="bancos" id="bancos">
+                  <option value="">Seu banco:</option>
+                </select>
+                </div>
+            </div>
+
+          </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -101,14 +138,5 @@
         </div>
       </div>
     </div>
-
-    <!--Botao carregar banco / campo para selecioanr banco-->
-    <form>
-      <input type="button" value="Carregar" onclick="carregarBancos()" />
-      <select name="bancos" id="bancos">
-        <option value="">Selecione:</option>
-      </select>
-    </form>
-    <!---->
   </body>
 </html>
