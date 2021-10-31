@@ -89,9 +89,28 @@
 
             <div class="col">
               <h3>Informações</h3>
+
+                  <div>
+                    <label for="ind">Escolha o Indicador:</label>
+                      <select id="ind" name="ind">
+                        <option value="CPF">CPF</option>
+                        <option value="CNPJ">CNPJ</option>
+                        <option value="cel">N° Celular</option>
+                        <option value="chave">Chave aleatoria</option>
+                      </select>
+                  </div>
+
                 <div>
                     <label for="indicador"><i class="info"></i> Indicador</label>
                     <input type="text" id="indicador" name="indicador" placeholder="Digite o indicador.">
+                </div>
+
+                <div>
+                  <label for="operacao">Escolha a operacao:</label>
+                    <select id="operacao" name="operacao">
+                      <option value="envio">Envio</option>
+                      <option value="rec">Recebimento</option>
+                    </select>
                 </div>
               
                 <div>
