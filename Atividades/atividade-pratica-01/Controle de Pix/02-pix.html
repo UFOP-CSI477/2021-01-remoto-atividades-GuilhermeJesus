@@ -41,6 +41,7 @@
           <p>CPF: 123456789</p>
           <p>Email: atoa@guilherme.com</p>
           <p>Saldo: <span id="txtSaldo"></span></p>
+          <p id="hist2"><span id="hist2"></span></p>
         </div>
       </div>
 
@@ -50,7 +51,7 @@
           <button
             button
             type="button"
-            class="btn btn-primary"
+            class="btn btn-secondary"
             data-toggle="modal"
             data-target="#exampleModal"
           >
@@ -58,7 +59,26 @@
           </button>
         </div>
 
-        <a href="historico.html" class="btn btn-primary">Historico</a>
+        <table  class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col" id="c1">Indicador</th>
+              <th scope="col" id="c2">Valor</th>
+              <th scope="col" id="c3">Nome</th>
+              <th scope="col" id="c4">Banco1</th>
+              <th scope="col" id="c5">Banco2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+          </tbody>
+        </table>
 
       </div>
     </div>
@@ -150,7 +170,7 @@
             >
               Fechar
             </button>
-            <button type="button" class="btn btn-primary" onclick="guardaTransacao()">Confirmar</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="guardaTransacao()">Confirmar</button>
           </div>
 
         </div>
