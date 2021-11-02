@@ -1,16 +1,17 @@
 <?php
 
-    //echo "POST";
-    //var_dump($_POST);
+    echo "POST";
+    var_dump($_POST);
 
-    $user = $_POST["usuario"];
-    $password = $_POST["senha"];
+    $usuario = $_POST["usuario"];
+    $email = $_POST["email"];
+    $nome = $_POST["nome"];
+    $telefone = $_POST["telefone"];
+    $cep = $_POST["cep"];
 
-    if($user == "admin" && $password == "123456"){
-        echo "<h1> OLA, $user !<h1>";
-        echo "<p> Senha: $password </p>";
-    }else{
-        echo "<h1> Usuario e/ou senha invalidos";
-    }
+    echo "<h1> DADOS DO CADASTRO DE , $usuario !<h1>";
 
-    echo "<a href=\"index.html\">Voltar</a>";
+    echo "<p> Nome: $nome </p>";
+    echo "<p> Email: $email </p>";
+    echo "<p> Telefone: $telefone </p>";
+    echo "<p> CEP: $cep </p>";

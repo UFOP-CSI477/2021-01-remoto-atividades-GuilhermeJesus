@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atividade04 JS</title>
+    <title>Aula PHP 06</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -45,7 +45,7 @@
           <a href="sair.html" target="_blank">Sair</a>
         </div>
 
-        
+
         <div class="col-md-6">
           <img width="20%" src="./img/blue.jpg" alt="" />
           <p>Nome: Guilherme A R de Jesus</p>
@@ -56,7 +56,7 @@
         </div>
 
         <div class="col-md-6">
-          <form name="formulario" method="get">
+          <form action="validar.php" method="post">
             <div class="form-group">
               <label for="nome">Nome : </label>
               <input
@@ -108,13 +108,8 @@
               />
             </div>
 
-            <input
-              type="button"
-              value="Cadastrar"
-              class="btn-primary"
-              onclick="recebeDados()"
-            />
-            <input type="reset" value="Limpar" class="btn-secondary" />
+            <input type="submit" value="Cadastrar" name="btnAcessar">
+            <input type="reset" value="Limpar" name="btnLimpar">
           </form>
         </div>
       </div>
