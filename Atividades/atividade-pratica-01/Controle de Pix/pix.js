@@ -70,5 +70,33 @@ function guardaTransacao() {
 
   //testando
 
-
+   let trasacao = `${ind} - ${valor} - ${nome} - ${b2} -> ${b1} `;
+   list.push(trasacao);
 }
+
+function generate_table() {
+
+    document.getElementById("apagar").innerHTML = "";
+
+    var body = document.getElementsByTagName("p")[5];
+  
+    var tbl = document.createElement("table");
+    var tblBody = document.createElement("tbody");
+  
+    for (var i = 0; i < list.length; i++) {
+      var row = document.createElement("tr");
+  
+      for (var j = 0; j < 1; j++) {
+        var cell = document.createElement("td");
+        var cellText = document.createTextNode(list[i]);
+        cell.appendChild(cellText);
+        row.appendChild(cell);
+      }
+      tblBody.appendChild(row);
+    }
+  
+    tbl.appendChild(tblBody);
+   
+    body.appendChild(tbl);
+    tbl.setAttribute("border", "2");
+  }
