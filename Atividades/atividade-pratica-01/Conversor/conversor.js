@@ -92,7 +92,7 @@ function converte() {
   setTimeout(function(){
   resultado = entrada*(valor1/valor2);
     console.log(resultado);
-  }, 3000);
+  }, 2000);
 
 }
 
