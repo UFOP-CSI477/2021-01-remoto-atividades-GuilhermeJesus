@@ -1,6 +1,8 @@
 let valor1 = 0;
 let valor2 = 0;
 let aux=0;
+let resultado = 0;
+let entrada = 0;
 
 let m1 = "";
 let m2 = "";
@@ -65,6 +67,9 @@ let url2 =
   "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='EUR'&@dataCotacao='11-05-2021'&$top=100&$format=json&$select=cotacaoCompra,cotacaoVenda";
 
 function converte() {
+
+  entrada = document.getElementById("entrada").value;
+
   carregarMoeda();
   carregarMoeda2();
 
@@ -74,9 +79,15 @@ function converte() {
   carregar2();
   carregar();
 
-  console.log("TESTE");
-  console.log(valor1);
-  console.log(valor2);
+  setTimeout(function(){
+    console.log("TESTE");
+    console.log(valor1);
+    console.log(valor2);
+    console.log(m1);
+    console.log(m2);
+    console.log(entrada);
+}, 1000);
+
 }
 
 function carregar() {
@@ -95,6 +106,7 @@ function recebeValor(data) {
 
   aux = teste[teste.length - 1];
   console.log("TESTE",typeof(aux),aux);
+  valor1 = aux;
 }
 
 function carregar2() {
@@ -102,7 +114,7 @@ function carregar2() {
     "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='USD'&@dataCotacao='11-04-2021'&$top=100&$format=json&$select=cotacaoCompra"
   )
     .then((response) => response.json())
-    .then((data) => recebeValor2(data.value))
+    .then((data) => (recebeValor2(data.value)))
     .catch((error) => console.error(error));
 }
 
@@ -113,4 +125,5 @@ function recebeValor2(data) {
 
   aux = teste[teste.length - 1];
   console.log("TESTE",typeof(aux),aux);
+  valor2 = aux;
 }
