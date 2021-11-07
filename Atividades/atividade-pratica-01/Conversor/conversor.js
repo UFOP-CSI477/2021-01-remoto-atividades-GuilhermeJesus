@@ -1,11 +1,16 @@
+let m1 = "";
+let m2 = "";
+let dataCot="";
+let url="";
+let url2="";
+
 let valor1 = 0;
 let valor2 = 0;
 let aux=0;
 let resultado = 0;
 let entrada = 0;
 
-let m1 = "";
-let m2 = "";
+
 
 function limparSelect(campo) {
   while (campo.length > 1) {
@@ -61,14 +66,10 @@ function preencherSelectMoeda2(data) {
 
 // ---------------------------------------------------------
 
-let urlTeste =
-  "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='EUR'&@dataCotacao='11-05-2021'&$top=100&$format=json&$select=cotacaoCompra,cotacaoVenda";
-let url2 =
-  "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='EUR'&@dataCotacao='11-05-2021'&$top=100&$format=json&$select=cotacaoCompra,cotacaoVenda";
-
 function converte() {
 
-  entrada = document.getElementById("entrada").value;
+  entrada = parseFloat(document.getElementById("entrada").value);
+  dataCot = document.getElementById("dataCot").value;
 
   carregarMoeda();
   carregarMoeda2();
@@ -76,24 +77,27 @@ function converte() {
   m1 = document.getElementById("moeda").value;
   m2 = document.getElementById("moeda2").value;
 
-  carregar2();
-  carregar();
 
   setTimeout(function(){
-    console.log("TESTE");
-    console.log(valor1);
-    console.log(valor2);
-    console.log(m1);
-    console.log(m2);
-    console.log(entrada);
-}, 1000);
+    url = `https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='${m1}'&@dataCotacao='${dataCot}'&$top=100&$format=json&$select=cotacaoCompra,cotacaoVenda`;
+    url2 = `https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='${m2}'&@dataCotacao='${dataCot}'&$top=100&$format=json&$select=cotacaoCompra,cotacaoVenda`;
+    carregar2();
+    carregar();
+
+    console.log(typeof(valor2));
+    console.log(typeof(valor1));
+    console.log(typeof(entrada));
+  }, 1000);
+
+  setTimeout(function(){
+  resultado = entrada*(valor1/valor2);
+    console.log(resultado);
+  }, 3000);
 
 }
 
 function carregar() {
-  fetch(
-    "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='USD'&@dataCotacao='11-05-2021'&$top=100&$format=json&$select=cotacaoCompra"
-  )
+  fetch(url)
     .then((response) => response.json())
     .then((data) => recebeValor(data.value))
     .catch((error) => console.error(error));
@@ -110,9 +114,7 @@ function recebeValor(data) {
 }
 
 function carregar2() {
-  fetch(
-    "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='USD'&@dataCotacao='11-04-2021'&$top=100&$format=json&$select=cotacaoCompra"
-  )
+  fetch(url2)
     .then((response) => response.json())
     .then((data) => (recebeValor2(data.value)))
     .catch((error) => console.error(error));
