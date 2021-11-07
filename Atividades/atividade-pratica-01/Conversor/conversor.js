@@ -83,15 +83,11 @@ function converte() {
     url2 = `https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='${m2}'&@dataCotacao='${dataCot}'&$top=100&$format=json&$select=cotacaoCompra,cotacaoVenda`;
     carregar2();
     carregar();
-
-    console.log(typeof(valor2));
-    console.log(typeof(valor1));
-    console.log(typeof(entrada));
   }, 1000);
 
   setTimeout(function(){
   resultado = entrada*(valor1/valor2);
-    console.log(resultado);
+    window.alert(resultado);
   }, 2000);
 
 }
@@ -109,7 +105,6 @@ function recebeValor(data) {
   Object.entries(data).map(([key, value]) => teste.push(parseFloat(value.cotacaoCompra)));
 
   aux = teste[teste.length - 1];
-  console.log("TESTE",typeof(aux),aux);
   valor1 = aux;
 }
 
@@ -126,6 +121,5 @@ function recebeValor2(data) {
   Object.entries(data).map(([key, value]) => teste.push(parseFloat(value.cotacaoCompra)));
 
   aux = teste[teste.length - 1];
-  console.log("TESTE",typeof(aux),aux);
   valor2 = aux;
 }
