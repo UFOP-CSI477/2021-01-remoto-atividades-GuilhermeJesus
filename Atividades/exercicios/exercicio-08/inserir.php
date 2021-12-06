@@ -12,8 +12,8 @@
         <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome">
 
-        <label for="um">Um</label>
-        <input type="text" id="um" name="um">
+        <label for="sigla">Sigla</label>
+        <input type="text" id="sigla" name="sigla">
 
         <button type="submit">Inserir</button>
     </form> 
