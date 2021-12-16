@@ -1,6 +1,6 @@
 <?php
 
-require '../Models/Estado.php';
+require '../Vendor/autoload.php';
 
 use src\Models\Estado;
 
