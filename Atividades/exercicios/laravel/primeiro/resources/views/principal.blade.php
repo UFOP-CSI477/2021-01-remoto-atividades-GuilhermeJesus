@@ -7,19 +7,26 @@
     <title>View Principal</title>
 </head>
 <body>
-<div class="col-md-6">
-            <div>
-              <a href="{{route('principal')}}" target="_blank">Home</a>
-            </div>
-            
-            <div>
-              <a href="{{route('estados.index')}}" target="_blank">Estados</a>
-            </div>
-              
-            <div>
-              <a href="{{route('estados.cidades')}}" target="_blank">Cidades</a>
-            </div>   
+  <div class="col-md-6">
+    <div>
+          <a href="{{route('principal')}}" target="_blank">Home</a>
+        </div>
+        
+        <div>
+          <a href="{{route('estados.index')}}" target="_blank">Estados</a>
+        </div>
+          
+        <div>
+          <a href="{{route('estados.cidades')}}" target="_blank">Cidades</a>
+        </div>   
+    </div>
 
-            @yield('conteudo')
-</body>
+    @if(session('mensagem'))
+        <div class="alert alert-sucess">
+          {{session('mensagem')}}
+        </div>
+    @endif
+    
+    @yield('conteudo')
+  </body>
 </html>
