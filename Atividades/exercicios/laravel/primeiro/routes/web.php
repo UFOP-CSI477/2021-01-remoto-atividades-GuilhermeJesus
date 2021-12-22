@@ -15,12 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 use App\Models\Estado;
 use App\Http\Controllers\EstadoController;
+use App\Http\Controllers\CidadeController;
 
 Route::get('/', function () {
     return view('principal');
 })->name('principal');
 
-Route::get('/estados', EstadoController::class);
+//Route::get('/estados', EstadoController::class);
+
+Route::resource('/estados', EstadoController::class)->middleware('auth');
+Route::resource('/cidades', CidadeController::class);
 
 /*
 Route::get('/ola', function(){
