@@ -46,3 +46,6 @@ Route::get('/estados/{id}', function(){
     return view('lista', ['dados' => $estado]);
 });
 */
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Cidade;
 use App\Http\Requests\StoreCidadeRequest;
 use App\Http\Requests\UpdateCidadeRequest;
+use Illuminate\Support\Facades\Auth;
 
 class CidadeController extends Controller
 {
